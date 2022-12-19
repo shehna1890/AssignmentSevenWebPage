@@ -1,0 +1,259 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC1C89B9-252F-471C-9212-D4A65A48316C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HtmlLogo</RootNamespace>
+    <AssemblyName>HtmlLogo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44392</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\color\default.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\custom-fonts.css" />
+    <Content Include="assets\css\fancybox\blank.gif" />
+    <Content Include="assets\css\fancybox\fancybox_loading.gif" />
+    <Content Include="assets\css\fancybox\fancybox_overlay.png" />
+    <Content Include="assets\css\fancybox\fancybox_sprite.png" />
+    <Content Include="assets\css\fancybox\jquery.fancybox.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\overwrite.css" />
+    <Content Include="assets\css\prettyPhoto.css" />
+    <Content Include="assets\css\slippry.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\customicon\Icons.svg" />
+    <Content Include="assets\fonts\fontawesome\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\img\arrows.svg" />
+    <Content Include="assets\img\cursor.png" />
+    <Content Include="assets\img\dummies\team1.jpg" />
+    <Content Include="assets\img\dummies\team2.jpg" />
+    <Content Include="assets\img\dummies\team3.jpg" />
+    <Content Include="assets\img\dummies\team4.jpg" />
+    <Content Include="assets\img\glyphicons-halflings-white.png" />
+    <Content Include="assets\img\glyphicons-halflings.png" />
+    <Content Include="assets\img\portfolio\1.jpg" />
+    <Content Include="assets\img\portfolio\10.jpg" />
+    <Content Include="assets\img\portfolio\11.jpg" />
+    <Content Include="assets\img\portfolio\12.jpg" />
+    <Content Include="assets\img\portfolio\13.jpg" />
+    <Content Include="assets\img\portfolio\14.jpg" />
+    <Content Include="assets\img\portfolio\2.jpg" />
+    <Content Include="assets\img\portfolio\3.jpg" />
+    <Content Include="assets\img\portfolio\4.jpg" />
+    <Content Include="assets\img\portfolio\5.jpg" />
+    <Content Include="assets\img\portfolio\6.jpg" />
+    <Content Include="assets\img\portfolio\7.jpg" />
+    <Content Include="assets\img\portfolio\8.jpg" />
+    <Content Include="assets\img\portfolio\9.jpg" />
+    <Content Include="assets\img\portfolio\app-design.png" />
+    <Content Include="assets\img\slide\1.jpg" />
+    <Content Include="assets\img\slide\2.jpg" />
+    <Content Include="assets\img\slide\3.jpg" />
+    <Content Include="assets\img\sy-loader.gif" />
+    <Content Include="assets\js\animate.js" />
+    <Content Include="assets\js\AnimOnScroll.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\classie.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\imagesloaded.js" />
+    <Content Include="assets\js\jquery-1.9.1.min.js" />
+    <Content Include="assets\js\jquery.easing.js" />
+    <Content Include="assets\js\jquery.fancybox-media.js" />
+    <Content Include="assets\js\jquery.fancybox.pack.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\jquery.nav.js" />
+    <Content Include="assets\js\jquery.nicescroll.min.js" />
+    <Content Include="assets\js\jquery.scrollTo.js" />
+    <Content Include="assets\js\masonry.pkgd.min.js" />
+    <Content Include="assets\js\modernizr.custom.js" />
+    <Content Include="assets\js\nagging-menu.js" />
+    <Content Include="assets\js\slippry.min.js" />
+    <Content Include="assets\js\validate.js" />
+    <Content Include="CSS\CONTACT.css" />
+    <Content Include="CSS\gallery.css" />
+    <Content Include="CSS\ourteam.css" />
+    <Content Include="Html\Image\1106605.jpg" />
+    <Content Include="Html\Image\862638.jpg" />
+    <Content Include="Html\Image\862639.jpg" />
+    <Content Include="Html\Image\hotelceo.jpg" />
+    <Content Include="Html\Image\img\about.jpg" />
+    <Content Include="Html\Image\img\apple-touch-icon.png" />
+    <Content Include="Html\Image\img\chefs-bg.jpg" />
+    <Content Include="Html\Image\img\chefs\chefs-1.jpg" />
+    <Content Include="Html\Image\img\chefs\chefs-2.jpg" />
+    <Content Include="Html\Image\img\chefs\chefs-3.jpg" />
+    <Content Include="Html\Image\img\event-birthday.jpg" />
+    <Content Include="Html\Image\img\event-custom.jpg" />
+    <Content Include="Html\Image\img\event-private.jpg" />
+    <Content Include="Html\Image\img\events-bg.jpg" />
+    <Content Include="Html\Image\img\favicon.png" />
+    <Content Include="Html\Image\img\gallery\gallery-1.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-2.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-3.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-4.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-5.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-6.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-7.jpg" />
+    <Content Include="Html\Image\img\gallery\gallery-8.jpg" />
+    <Content Include="Html\Image\img\slide\slide-1.jpg" />
+    <Content Include="Html\Image\img\slide\slide-2.jpg" />
+    <Content Include="Html\Image\img\slide\slide-3.jpg" />
+    <Content Include="Html\Image\img\specials-1.jpg" />
+    <Content Include="Html\Image\img\specials-2.jpg" />
+    <Content Include="Html\Image\img\specials-3.jpg" />
+    <Content Include="Html\Image\img\specials-4.jpg" />
+    <Content Include="Html\Image\img\specials-5.jpg" />
+    <Content Include="Html\Image\img\testimonials-bg.jpg" />
+    <Content Include="Html\Image\img\testimonials\testimonials-1.jpg" />
+    <Content Include="Html\Image\img\testimonials\testimonials-2.jpg" />
+    <Content Include="Html\Image\img\testimonials\testimonials-3.jpg" />
+    <Content Include="Html\Image\img\testimonials\testimonials-4.jpg" />
+    <Content Include="Html\Image\img\testimonials\testimonials-5.jpg" />
+    <Content Include="Html\Image\CEO.jpg" />
+    <Content Include="Html\Image\manager.jpg" />
+    <Content Include="Html\Image\neww.jpg" />
+    <Content Include="Html\Image\new.jpg" />
+    <Content Include="Html\Image\BG.jfif" />
+    <Content Include="Html\Image\BG.jpg" />
+    <Content Include="Html\Image\BG1.jfif" />
+    <Content Include="Html\Image\hotel.jpeg" />
+    <Content Include="Html\Image\hotel1.jpg" />
+    <Content Include="Html\Image\logo.png" />
+    <Content Include="Html\Image\newwww.jpg" />
+    <Content Include="Html\Image\portada-reporting.jpg" />
+    <Content Include="Html\Image\taj.jpeg" />
+    <Content Include="Html\Logo.html" />
+    <Content Include="Html\Navigation\Contactus.html" />
+    <Content Include="Html\Navigation\Gallery.html" />
+    <Content Include="Html\Navigation\Home.html" />
+    <Content Include="Html\Navigation\Menu.html" />
+    <Content Include="Html\Navigation\Ourteam.html" />
+    <Content Include="Html\StyleSheet1.css" />
+    <Content Include="Html\Navigation\StyleSheet2.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Html\Image\hotel new.avif" />
+    <Content Include="assets\fonts\customicon\Icons.eot" />
+    <Content Include="assets\fonts\customicon\Icons.ttf" />
+    <Content Include="assets\fonts\customicon\Icons.woff" />
+    <Content Include="assets\fonts\fontawesome\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot%40" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53289</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
